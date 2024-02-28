@@ -1,0 +1,2179 @@
+
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  /* CSS for Navbar */
+  nav {
+    width: 100%;
+    height: 6vh;
+    background-color: rgb(67, 67, 68);
+    position: sticky;
+    top: 0;
+  }
+  
+  .container {
+    height: 6vh;
+    width: 70%;
+    margin: auto;
+    background-color: rgb(67, 67, 68);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #dadada;
+  }
+  
+  #check,
+  .checked {
+    display: none;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #dadada;
+    padding: 30px;
+  
+  }
+  
+  .left:hover {
+    color: whitesmoke;
+  }
+  
+  #icon2:hover {
+    color: whitesmoke;
+  }
+  
+  
+  a:hover {
+    color: whitesmoke;
+  }
+  
+ 
+  .icon1 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  .missing{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    display: none;
+  }
+  
+  
+  
+  @media screen and (max-width:374px) {
+    ul {
+      height: 80vh;
+      width: 40%;
+      background: linear-gradient(black, grey);
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 6vh;
+      left: 100%;
+      transition: all 2s;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      font-size: 15px;
+    }
+  
+    .checked {
+      display: block;
+      margin-left: 200px;
+  
+    }
+  
+    #check:checked~ul {
+      left: 65%;
+    }
+  
+    #icon2,
+    #icon3 {
+      display: none;
+    }
+  
+    .missing{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 25%;
+      gap: 1rem;
+    }
+  
+  
+  }
+  
+  
+  
+  @media (min-width:375px) and (max-width:767px) {
+    ul {
+      height: 80vh;
+      width: 30%;
+      background: linear-gradient(black, grey);
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 6vh;
+      left: 100%;
+      transition: all 2s;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      font-size: 15px;
+    }
+  
+    .checked {
+      display: block;
+      margin-left: 300px;
+    }
+  
+    #check:checked~ul {
+      left: 70%;
+    }
+  
+    #icon2,
+    #icon3 {
+      display: none;
+    }
+  
+    .missing{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 16%;
+      gap: 1rem;
+    }
+  }
+  
+  
+  @media only screen and (width:540px){
+    .missing{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 25%;
+      gap: 1rem;
+    }
+  }
+  
+  
+  @media (min-width:768px) and (max-width:820px) {
+    ul {
+      height: 80vh;
+      width: 30%;
+      background: linear-gradient(black, grey);
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 6vh;
+      left: 100%;
+      transition: all 2s;
+      justify-content: space-evenly;
+      align-items:flex-start;
+      font-size: 20px;
+    }
+  
+    .checked {
+      display: block;
+      margin-left: 600px;
+    }
+  
+    #check:checked~ul {
+      left: 75%;
+    }
+  
+    #icon2,
+    #icon3 {
+      display: none;
+    }
+  
+    .missing{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 16%;
+      gap: 1.2rem;
+    }
+  
+  }
+  
+  @media(min-width:821px) and (max-width:911px) {
+  
+    li a {
+      padding: 19px;
+    }
+  
+    .container {
+      font-size: 15px;
+    }
+  
+  }
+  
+  
+  @media(min-width:912px) and (max-width:1025px) {
+    ul{
+      font-size: 13px;
+    }
+  
+  
+    li a {
+      padding: 18px;
+    }
+  
+    .container {
+      font-size: 15px;
+    }
+  
+   #sec1 > div{
+    height: 400px;
+    width: 100%;
+    background: url(https://www.apple.com/105/media/us/apple-events/2023/cf0bee50-686f-4a3c-9636-9e16522bf96b/anim/hero/large.mp4);
+    
+  
+   }
+  
+  }
+
+  section {
+    height: 7vh;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 11px;
+    color: #645f5f;
+   
+  }
+  
+  section p span {
+    text-decoration: none;
+    font-weight: lighter;
+    color: blue;
+  }
+  
+  section p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width:300px){
+    section {
+      height: 7vh;
+      width: 95%;
+      text-align: center;
+      font-size: 12px;
+      
+    
+    }
+  }
+  
+  @media (min-width:301px) and (max-width:389px){
+    section {
+      height: 7vh;
+      width: 95%;
+      text-align: center;
+      font-size: 12px;
+      padding: 14px;
+    
+    }
+  }
+  
+  
+  @media (min-width:390px) and (max-width:414px){
+    section {
+      height: 7vh;
+      width: 95%;
+      text-align: center;
+      font-size: 16px;
+      padding: 19px;
+    
+    }
+  }
+  
+  
+  @media (min-width:414px) and (max-width:765px){
+    section {
+      height: 7vh;
+      width: 95%;
+      text-align: center;
+      font-size: 14px;
+      padding: 15px;
+    
+    }
+  }
+  
+  @media (min-width:768px) and (max-width:915px){
+    section {
+      height: 7vh;
+      width: 95%;
+      text-align: center;
+      font-size: 23px;
+      padding: 15px;
+    
+    }
+  }
+  
+  
+  @media (min-width:915px) and (max-width:1024px){
+    section {
+      height: 7vh;
+      width: 95%;
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+    
+    }
+  }
+
+  .container1{
+    background: url("./pics/pic1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+   }
+   
+   .top {
+     color: white;
+     text-align: center;
+     /* font-family: 'Times New Roman', Times, serif; */
+   
+   }
+   
+   .top h1 {
+     font-size: 55px;
+     padding-top: 25px; 
+   
+   }
+   
+   .top h2 {
+     font-size: 30px;
+     padding-top: 30px;
+   }
+   
+   .top span {
+     color: rgb(53, 151, 231);
+     text-decoration: none;
+     font-size: 23px;
+     padding: 15px;
+     padding-top: 60px;
+     line-height: 40px;
+     cursor: pointer;
+   } 
+   
+   .top span:hover {
+     text-decoration: underline;
+   } 
+   
+   
+   @media screen and (max-width:411px){
+     .container1{
+       background: url("./pics/pic2new.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       margin-top: 30px;
+       height: 70vh;
+       width: 100%;
+     }
+   
+     .top h1 {
+       font-size: 34px;
+       padding-top: 25px; 
+     
+     }
+     
+     .top h2 {
+       font-size: 23px;
+       padding-top: 10px;
+     }
+     .top span {
+       color: rgb(53, 151, 231);
+       font-size: 19px;
+       /* padding-bottom: 10px; */
+       cursor: pointer;
+       line-height: -38px;
+     } 
+   }
+   
+   
+   
+   @media (min-width:412px) and (max-width:767px){
+     .container1{
+       background: url("./pics/pic2new.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       margin-top: 30px;
+       height: 70vh;
+       width: 100%;
+     }
+   
+     .top h1 {
+       font-size: 38px;
+       padding-top: 25px; 
+     
+     }
+     
+     .top h2 {
+       font-size: 28px;
+       padding-top: 10px;
+     }
+     .top span {
+       color: rgb(53, 151, 231);
+       font-size: 22px;
+       /* padding-bottom: 10px; */
+       cursor: pointer;
+       line-height: -40px;
+     } 
+   }
+   
+   
+   @media (min-width:768px) and (max-width:820px){
+     .container1{
+       background: url("./pics/pic2new.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       margin-top: 30px;
+       height: 70vh;
+       width: 100%;
+     }
+   
+     .top h1 {
+       font-size: 48px;
+       padding-top: 25px; 
+     
+     }
+     
+     .top h2 {
+       font-size: 35px;
+       padding-top: 10px;
+     }
+     .top span {
+       color: rgb(53, 151, 231);
+       font-size: 28px;
+       /* padding-bottom: 10px; */
+       cursor: pointer;
+       line-height: -40px;
+     } 
+   }
+   
+   
+   
+   @media (min-width:821px) and (max-width:920px){
+     .container1{
+       background: url("./pics/pic2new.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       margin-top: 30px;
+       height: 70vh;
+       width: 100%;
+     }
+   
+     .top h1 {
+       font-size: 50px;
+       padding-top: 25px; 
+     
+     }
+     
+     .top h2 {
+       font-size: 40px;
+       padding-top: 10px;
+     }
+     .top span {
+       color: rgb(53, 151, 231);
+       font-size: 30px;
+       /* padding-bottom: 10px; */
+       cursor: pointer;
+       line-height: -40px;
+     } 
+   }
+   
+   @media (min-width:920px) and (max-width:1024px){
+     .container1{
+       /* background: url("./pics/pic2new.jpg"); */
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       margin-top: 30px;
+       height: 70vh;
+       width: 100%;
+     }
+   
+     .top h1 {
+       font-size: 38px;
+       padding-top: 25px; 
+     
+     }
+     
+     .top h2 {
+       font-size: 28px;
+       padding-top: 10px;
+     }
+     .top span {
+       color: rgb(53, 151, 231);
+       font-size: 18px;
+       /* padding-bottom: 10px; */
+       cursor: pointer;
+       line-height: -19px;
+     } 
+   }
+   
+   
+   .container2 {
+    background: url("./pics/pic3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+  }
+  
+  .bottom {
+    color: black;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  
+  }
+  
+  .bottom h1 {
+    font-size: 55px;
+    padding-top: 25px;
+  
+  }
+  
+  .bottom h2 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  
+  .bottom span {
+    color: rgb(53, 151, 231);
+    text-decoration: none;
+    font-size: 23px;
+    padding: 15px;
+    padding-top: 60px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .bottom span:hover {
+    text-decoration: underline;
+  }
+  
+  
+  @media screen and (max-width:400px) {
+    .container2 {
+      background: url("https://www.apple.com/v/home/az/images/heroes/iphone-14/hero_iphone14_yellow__eun20sn4imi6_small.jpg");
+      height: 70vh;
+      width: 100%;
+      margin: auto;
+      background-repeat: no-repeat;
+      /* background-size: cover; */
+      background-position: center;
+    }
+  
+    .bottom h1 {
+      font-size: 40px;
+      padding-top: 25px;
+    
+    }
+    
+    .bottom h2 {
+      font-size: 20px;
+      font-weight: lighter;
+      padding-top: 5px;
+    }
+    
+    .bottom span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px;
+      padding-top: 60px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+  }
+  
+  
+  
+  
+  @media (min-width:401px) and (max-width:539px) {
+    .container2 {
+      background: url("https://www.apple.com/v/home/az/images/heroes/iphone-14/hero_iphone14_yellow__eun20sn4imi6_small.jpg");
+      height: 60vh;
+      width: 100%;
+      margin: auto;
+      background-repeat: no-repeat;
+      /* background-size: cover; */
+      background-position: center;
+    }
+  
+    .bottom h1 {
+      font-size: 45px;
+      padding-top: 25px;
+    
+    }
+    
+    .bottom h2 {
+      font-size: 25px;
+      font-weight: lighter;
+      padding-top: 5px;
+    }
+    
+    .bottom span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 22px;
+      padding: 15px;
+      padding-top: 60px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+  }
+  
+  @media (min-width:540px) and (max-width:765px) {
+    .container2 {
+      background: url("https://www.apple.com/v/home/az/images/heroes/iphone-14/hero_iphone14_yellow__eun20sn4imi6_small.jpg");
+      height: 60vh;
+      width: 100%;
+      margin: auto;
+      background-repeat: no-repeat;
+      /* background-size: cover; */
+      background-position: center;
+    }
+    .bottom h1 {
+      font-size: 40px;
+      padding-top: 25px;
+    
+    }
+    
+    .bottom h2 {
+      font-size: 20px;
+      font-weight: lighter;
+      padding-top: 5px;
+    }
+    
+    .bottom span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px;
+      padding-top: 60px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+  }
+  
+  
+  
+  @media (min-width:766px) and (max-width:920px) {
+    .container2 {
+      /* background: url("https://www.apple.com/v/home/az/images/heroes/iphone-14/hero_iphone14_yellow__eun20sn4imi6_small.jpg"); */
+      background: url("./pics/pic3.jpg");
+      height: 70vh;
+      width: 100%;
+      margin: auto;
+      background-repeat: no-repeat;
+      /* background-size: cover; */
+      background-position: center;
+    }
+  
+    .bottom h1 {
+      font-size: 50px;
+      padding-top: 25px;
+    
+    }
+    
+    .bottom h2 {
+      font-size: 30px;
+      font-weight: lighter;
+      padding-top: 5px;
+    }
+    
+    .bottom span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 27px;
+      padding: 15px;
+      padding-top: 60px;
+      line-height: 40px;
+      cursor: pointer;
+    }
+  }
+  
+  @media (min-width:921px) and (max-width:1024px){
+    .bottom h1 {
+      font-size: 40px;
+      padding-top: 20px;
+    
+    }
+    
+    .bottom h2 {
+      font-size: 20px;
+      font-weight: lighter;
+      padding-top: 5px;
+    }
+    
+    .bottom span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 19px;
+      padding: 15px;
+      padding-top: 50px;
+      line-height: 20px;
+      cursor: pointer;
+    }
+  }
+  
+  .container3{
+    background: url("./pics/pic5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    width: 100%;
+   }
+  
+   /* .container3>div{
+    height: 75vh;
+    width: 48%;
+  
+    background-color: white;
+   } */
+   
+   .watch {
+     color: white;
+     text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+   
+   }
+   
+   .watch h1 {
+     font-size: 55px;
+     padding-top: 50px; 
+   
+   }
+   
+   .watch h2 {
+     font-size: 30px;
+     padding-top: 10px;
+   }
+   
+   .watch span {
+     color: rgb(53, 151, 231);
+     text-decoration: none;
+     font-size: 23px;
+     padding: 15px;
+     padding-top: 60px;
+     line-height: 40px;
+     cursor: pointer;
+   } 
+   
+   .watch span:hover {
+     text-decoration: underline;
+   } 
+  
+   @media only screen and (max-width : 400px) {
+    .container3{
+      background: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_small.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      width: 100%;
+     }
+  
+     .watch h1 {
+      font-size: 30px;
+      padding-top: 50px; 
+    
+    }
+    
+    .watch h2 {
+      font-size: 20px;
+      padding-top: 10px;
+      font-weight: lighter;
+    }
+    
+    .watch span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px;
+      padding-top: 40px;
+      line-height: 30px;
+      cursor: pointer;
+    } 
+  
+   }
+  
+  
+   @media (min-width:401px) and (max-width : 519px) {
+    .container3{
+      background: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_small.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      width: 100%;
+     }
+  
+     .watch h1 {
+      font-size: 35px;
+      padding-top: 50px; 
+    
+    }
+    
+    .watch h2 {
+      font-size: 25px;
+      padding-top: 10px;
+      font-weight: lighter;
+    }
+    
+    .watch span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 22px;
+      padding: 15px;
+      padding-top: 40px;
+      line-height: 30px;
+      cursor: pointer;
+    } 
+  
+   }
+  
+   @media (min-width:519px) and (max-width : 767px) {
+    .container3{
+      /* background: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_small.jpg"); */
+      background: url("./pics/pic5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      width: 100%;
+     }
+  
+     .watch h1 {
+      font-size: 30px;
+      padding-top: 50px; 
+    
+    }
+    
+    .watch h2 {
+      font-size: 20px;
+      padding-top: 10px;
+      font-weight: lighter;
+    }
+    
+    .watch span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px;
+      padding-top: 40px;
+      line-height: 30px;
+      cursor: pointer;
+    } 
+  
+   }
+  
+   @media (min-width:768px) and (max-width : 820px) {
+    .container3{
+      /* background: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_small.jpg"); */
+      background: url("./pics/pic5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      width: 100%;
+     }
+  
+     .watch h1 {
+      font-size: 40px;
+      padding-top: 50px; 
+    
+    }
+    
+    .watch h2 {
+      font-size: 30px;
+      padding-top: 10px;
+      font-weight: lighter;
+    }
+    
+    .watch span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 26px;
+      padding: 15px;
+      padding-top: 40px;
+      line-height: 30px;
+      cursor: pointer;
+    } 
+  
+   }
+  
+   @media (min-width:821px) and (max-width : 920px) {
+    .container3{
+      /* background: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_small.jpg"); */
+      background: url("./pics/pic5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      width: 100%;
+     }
+  
+     .watch h1 {
+      font-size: 45px;
+      padding-top: 50px; 
+    
+    }
+    
+    .watch h2 {
+      font-size: 35px;
+      padding-top: 10px;
+      font-weight: lighter;
+    }
+    
+    .watch span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 30px;
+      padding: 15px;
+      padding-top: 40px;
+      line-height: 30px;
+      cursor: pointer;
+    }
+   }
+  
+  
+   @media (min-width:921px) and (max-width : 1024px) {
+    .container3{
+      /* background: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_small.jpg"); */
+      background: url("./pics/pic5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      width: 100%;
+     }
+  
+     .watch h1 {
+      font-size: 30px;
+      padding-top: 30px; 
+    
+    }
+    
+    .watch h2 {
+      font-size: 20px;
+      padding-top: 10px;
+      font-weight: lighter;
+    }
+    
+    .watch span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 15px;
+      padding-top: 40px;
+      line-height: 10px;
+      cursor: pointer;
+    }
+   }
+   
+      @media (min-width:1025px) and (max-width : 1280px) {
+    .container3{
+      /* background: url("https://www.apple.com/in/home/images/heroes/apple-watch-series-8/hero_apple_watch_series_8_spring__b1y8wb7xjc9y_small.jpg"); */
+      background: url("./pics/pic5.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      width: 100%;
+     }
+  
+     .watch h1 {
+      font-size: 40px;
+      padding-top: 30px; 
+    
+    }
+    
+    .watch h2 {
+      font-size: 30px;
+      padding-top: 10px;
+      font-weight: lighter;
+    }
+    
+    .watch span {
+      color: rgb(53, 151, 231);
+      text-decoration: none;
+      font-size: 24px;
+      padding: 15px;
+      padding-top: 40px;
+      line-height: 10px;
+      cursor: pointer;
+    }
+   }
+
+   .container4 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    margin: auto;
+  }
+  
+  #box1,
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box6 {
+    width: 49.5%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  #box1 {
+  
+    background: url("./pics/pic6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  #box2 {
+  
+    background: url("./pics/pic7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+    color: white;
+  }
+  
+  #box3 {
+    background: url("./pics/pic8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #box4 {
+    background: url("./pics/pic9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  #box5 {
+    background: url("./pics/pic10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #box6 {
+    background: url("./pics/pic11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  #box1 h1{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  #box1 h2{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #box1 span{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(53, 151, 231); 
+    cursor: pointer;
+  }
+  
+  #box1 span:hover{
+    text-decoration: underline;
+  }
+  
+  #box3 h1,#box4 h1,#box5 h1,#box6 h1{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  #box3 h2,#box4 h2,#box5 h2,#box6 h2{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #box3 span,#box4 span,#box5 span,#box6 span{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(53, 151, 231); 
+    cursor: pointer;
+  }
+  
+  #box3 span:hover,#box4 span:hover,#box5 span:hover,#box6 span:hover{
+    text-decoration: underline;
+  }
+  
+  #box5 h4{
+    color: orange;
+    font-size: 1.25rem;
+  }
+  
+  #box2 h1{
+    margin-top: 50vh;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  #box2 h2{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #box2 span{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(53, 151, 231); 
+    cursor: pointer;
+  }
+  
+  #box2 span:hover{
+    text-decoration: underline;
+  }
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width:920px) {
+    #Container {
+      width: 100%;
+      height: auto;
+    }
+  
+    #box1,
+    #box2,
+    #box3,
+    #box4,
+    #box5,
+    #box6 {
+      width: 100%;
+      
+    }
+  
+    #box1 {
+  
+      background: url("https://www.apple.com/v/home/az/images/promos/iphone-tradein/iphone_tradein_promo__d5au3rkw5kuq_small.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    
+    }
+    
+    #box2 {
+    
+      background: url("https://www.apple.com/v/home/az/images/promos/wwdc23-announce/promo_wwdc23__b68ptht3mro2_small.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    
+      color: white;
+    }
+    
+    #box3 {
+      background: url("https://www.apple.com/v/home/az/images/promos/ipad/promo_ipad__fioegapg12qi_small.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    #box4 {
+      background: url("https://www.apple.com/v/home/az/images/promos/macbook-pro-14-and-16/promo_mbp__ek7p477bkp6q_small.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+    
+    #box5 {
+      background: url("https://www.apple.com/in/home/promos/apple-watch-ultra/images/promo_apple_watch_ultra__gnsqulvdc4a6_small.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    #box6 {
+      background: url("https://www.apple.com/v/home/az/images/promos/homepod/promo_homepod_announce__bhviq9vjnlf6_small.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+  
+  
+    #box1 h1{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  #box1 h2{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #box1 span{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(53, 151, 231); 
+    cursor: pointer;
+  }
+  
+  #box1 span:hover{
+    text-decoration: underline;
+  }
+  
+  #box3 h1,#box4 h1,#box5 h1,#box6 h1{
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  #box3 h2,#box4 h2,#box5 h2,#box6 h2{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #box3 span,#box4 span,#box5 span,#box6 span{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(53, 151, 231); 
+    cursor: pointer;
+  }
+  
+  #box3 span:hover,#box4 span:hover,#box5 span:hover,#box6 span:hover{
+    text-decoration: underline;
+  }
+  
+  #box5 h4{
+    color: orange;
+    font-size: 1.25rem;
+  }
+  
+  #box2 h1{
+    margin-top: 50vh;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  #box2 h2{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #box2 span{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(53, 151, 231); 
+    cursor: pointer;
+  }
+  
+  #box2 span:hover{
+    text-decoration: underline;
+  }  
+  }
+  
+  
+  @media (min-width:300px) and (max-width:767px){
+    #box1 h1{
+      padding-top: 2rem;
+      font-size: 1.9rem;
+    }
+    
+    #box1 h2{
+      padding-top: 1rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    #box1 span{
+      padding-top: 1.5rem;
+      font-size: 1rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box1 span:hover{
+      text-decoration: underline;
+    }
+    
+    #box3 h1,#box4 h1,#box5 h1,#box6 h1{
+      padding-top: 2rem;
+      font-size: 1.9rem;
+    }
+    
+    #box3 h2,#box4 h2,#box5 h2,#box6 h2{
+      padding-top: 1rem;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    
+    #box3 span,#box4 span,#box5 span,#box6 span{
+      margin-top: 1rem;
+      padding: 1.5rem;
+      font-size: 1rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box3 span:hover,#box4 span:hover,#box5 span:hover,#box6 span:hover{
+      text-decoration: underline;
+    }
+    
+    #box5 h4{
+      color: orange;
+      font-size: 0.9rem;
+    }
+    
+    #box2 h1{
+      margin-top: 50vh;
+      padding-top: 2rem;
+      font-size: 1.9rem;
+    }
+    
+    #box2 h2{
+      padding-top: 1rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    #box2 span{
+      padding-top: 1.5rem;
+      font-size: 1rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box2 span:hover{
+      text-decoration: underline;
+    }
+    
+  }
+  
+  
+  @media (min-width:768px) and (max-width:920px){
+    
+    
+    
+    
+    #box1 h1{
+      padding-top: 2rem;
+      font-size: 2.8rem;
+    }
+    
+    #box1 h2{
+      padding-top: 1rem;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    #box1 span{
+      padding-top: 1.5rem;
+      font-size: 1.5rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box1 span:hover{
+      text-decoration: underline;
+    }
+    
+    #box3 h1,#box4 h1,#box5 h1,#box6 h1{
+      padding-top: 2rem;
+      font-size: 2.8rem;
+    }
+    
+    #box3 h2,#box4 h2,#box5 h2,#box6 h2{
+      padding-top: 1rem;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    #box3 span,#box4 span,#box5 span,#box6 span{
+      margin-top: 1rem;
+      padding: 1.5rem;
+      font-size: 1.5rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box3 span:hover,#box4 span:hover,#box5 span:hover,#box6 span:hover{
+      text-decoration: underline;
+    }
+    
+    #box5 h4{
+      color: orange;
+      font-size: 1.1rem;
+    }
+    
+    #box2 h1{
+      margin-top: 50vh;
+      padding-top: 2rem;
+      font-size: 2.8rem;
+    }
+    
+    #box2 h2{
+      padding-top: 1rem;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+    
+    #box2 span{
+      padding-top: 1.5rem;
+      font-size: 1.5rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box2 span:hover{
+      text-decoration: underline;
+    }
+    
+  }
+  
+  
+  @media (min-width:921px) and (max-width:1280px){
+    
+  #box1,
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box6 {
+    width: 48%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  
+  
+  
+    #box1 h1{
+      padding-top: 2rem;
+      font-size: 1.8rem;
+    }
+    
+    #box1 h2{
+      padding-top: 1rem;
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+    }
+    
+    #box1 span{
+      padding-top: 1.5rem;
+      font-size: 0.8rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box1 span:hover{
+      text-decoration: underline;
+    }
+    
+    #box3 h1,#box4 h1,#box5 h1,#box6 h1{
+      padding-top: 1.4rem;
+      font-size: 1.8rem;
+    }
+    
+    #box3 h2,#box4 h2,#box5 h2,#box6 h2{
+      padding-top: 1rem;
+      font-size: 1.4rem;
+      margin-bottom: 0.7rem;
+    }
+    
+    #box3 span,#box4 span,#box5 span,#box6 span{
+      margin-top: 1rem;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box3 span:hover,#box4 span:hover,#box5 span:hover,#box6 span:hover{
+      text-decoration: underline;
+    }
+    
+    #box5 h4{
+      color: orange;
+      font-size: 0.5rem;
+    }
+    
+    #box2 h1{
+      margin-top: 40vh;
+      padding-top: 2rem;
+      font-size: 1.5rem;
+    }
+    
+    #box2 h2{
+      padding-top: 1rem;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    #box2 span{
+      padding-top: 1.5rem;
+      font-size: 0.7rem;
+      color: rgb(53, 151, 231); 
+      cursor: pointer;
+    }
+    
+    #box2 span:hover{
+      text-decoration: underline;
+    }
+    
+  }
+
+  
+
+
+swiper-container {
+  width: 100%;
+  height: 100%; 
+} 
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+swiper-slide img {
+  display: block;
+  /* we can change the height and width of image here */
+  width: 90%;
+  height: 90vh;
+  object-fit: fill;
+  margin: auto;
+}
+
+.s1{
+  background:linear-gradient(skyblue,pink)
+}
+
+@media  screen and (max-width:539px) {
+  swiper-slide img {
+    display: block;
+    /* we can change the height and width of image here */
+    width: 90%;
+    height: 55vh;
+    object-fit: fill;
+    margin: auto;
+  }
+}
+
+@media  (min-width:540px) and (max-width:768px) {
+  swiper-slide img {
+    display: block;
+    /* we can change the height and width of image here */
+    width: 90%;
+    height: 70vh;
+    object-fit: fill;
+    margin: auto;
+  }
+}
+
+@media  (min-width:769px) and (max-width:912px) {
+  swiper-slide img {
+    display: block;
+    /* we can change the height and width of image here */
+    width: 90%;
+    height: 65vh;
+    object-fit: fill;
+    margin: auto;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 90vh;
+  margin-top: 3vh;
+  background-color: #F5F5F7;
+  
+}
+
+main{
+  height: 90vh;
+  width: 60%;
+  margin: auto;
+  background-color:#F5F5F7;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  /* border: 2px solid red; */
+}
+
+.f1{
+  height: 20vh;
+  width:100% ;
+  font-size: 0.9rem;
+  text-align: justify;
+  /* border: 2px solid red; */
+}
+
+.f2{
+  height: 50vh;
+  width:100% ;
+  display: flex;
+ justify-content: space-between;
+ align-items: start;
+ flex-wrap: wrap;
+ /* border: 2px solid red; */
+ 
+}
+
+.a1 h6{
+  padding:0.2em 0;
+  font-size: 1rem;
+  line-height:1.6;
+  color: rgb(83,83,85);
+  /* display: none; */
+}
+
+.a1{
+  height:50vh ;
+  width: 20%;
+  /* display: none; */
+ }
+
+.a1 p{
+  font-size: 1rem;
+  line-height: 1.6;
+  padding:0.2em 0;
+  /* display: none; */
+}
+
+.a1 p:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.a2{
+  width: 100%;
+  display: none;
+}
+.a2 li{
+  display: block;
+ list-style: none;
+ color: rgb(83,83,85);
+ line-height: 40px;
+ border: 1px solid rgb(219, 216, 216);
+
+}
+
+.f3{
+  height: 5vh;
+  width:100% ;
+  text-align: justify;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+}
+
+span.blue{
+  color:rgb(53, 151, 231) ;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  cursor: pointer;
+  
+}
+
+
+.f4{
+  height: 5vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.d1{
+  height: 5vh;
+  width: 35%;
+  /* border: 2px solid black; */
+}
+
+.d2{
+  height: 5vh;
+  width: 60%;
+  /* border: 2px solid black; */
+}
+
+.d3{
+  height: 5vh;
+  width: 5%;
+  /* border: 2px solid black; */
+}
+.dd1:hover,.dd2:hover,.dd3:hover,.dd4:hover,.dd5:hover,.d3:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  
+}
+.line{
+  margin-top: 1rem;
+}
+
+@media screen and (max-width:767px){
+  footer {
+    width: 100%;
+    height: 100vh;
+    margin-top: 3vh; 
+  }
+  
+  main{
+    height: 70vh;
+    width: 90%;
+    margin: auto;
+    background-color:#F5F5F7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    color: gray;
+  }
+
+  
+.f1{
+  height: 30vh;
+  width:100% ;
+  font-size: 0.55rem;
+  text-align: justify;
+ 
+}
+
+.f2{
+   height: 20vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin-top: -5vh;
+} 
+.a1{
+  display: none;
+}
+
+.a2{
+  width: 100%;
+  display: block;
+}
+.a2 li{
+  display: block;
+ list-style: none;
+ color: rgb(83,83,85);
+ line-height: 10px;
+ font-size: 0.5rem;
+ border: 1px solid rgb(219, 216, 216);
+ 
+
+}
+
+
+
+.f3{
+  height: 5vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  text-align: justify;
+  font-size: 0.55rem;
+  padding-top: 1rem;
+}
+
+span.blue{
+  color:rgb(53, 151, 231) ;
+  text-decoration: underline;
+  font-size: 0.55rem;
+  cursor: pointer;
+  
+}
+
+
+.f4{
+  height: 5vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 0.55rem;
+  flex-wrap: wrap;
+}
+
+hr.line{
+  display: none;
+}
+ .a1 p{
+  display: none;
+
+ }
+ .a1 br{
+  display:none;
+ }
+
+}
+
+@media (min-width:768px) and (max-width:920px){
+  footer {
+    width: 100%;
+    height: 100vh;
+    margin-top: 3vh; 
+  }
+  
+  main{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    background-color:#F5F5F7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+  }
+
+  
+.f1{
+  height: 40vh;
+  width:100% ;
+  font-size: 1.2rem;
+  text-align: justify;
+ 
+}
+
+.f2{
+   height: 30vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+} 
+.a1{
+  display: none;
+}
+
+.a2{
+  width: 100%;
+  display: block;
+}
+.a2 li{
+  display: block;
+ list-style: none;
+ color: rgb(83,83,85);
+ line-height: 30px;
+ font-size: 1.2rem;
+ border: 1px solid rgb(219, 216, 216);
+
+
+}
+
+
+
+.f3{
+  height: 10vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  text-align: justify;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+span.blue{
+  color:rgb(53, 151, 231) ;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  cursor: pointer;
+  
+}
+
+
+.f4{
+  height: 10vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1.2rem;
+  flex-wrap: wrap;
+}
+
+hr.line{
+  display: none;
+}
+ .a1 p{
+  display: none;
+
+ }
+ .a1 br{
+  display:none;
+ }
+}
+
+@media (min-width:920px) and (max-width:1024px){
+  footer {
+    width: 100%;
+    height: 100vh;
+    margin-top: 3vh; 
+  }
+  
+  main{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    background-color:#F5F5F7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+  }
+
+  
+.f1{
+  height: 40vh;
+  width:100% ;
+  font-size: 0.8rem;
+  text-align: justify;
+ 
+}
+
+.f2{
+   height: 30vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+} 
+.a1{
+  display: none;
+}
+
+.a2{
+  width: 100%;
+  display: block;
+}
+.a2 li{
+  display: block;
+ list-style: none;
+ color: rgb(83,83,85);
+ line-height: 18px;
+ font-size: 0.8rem;
+ border: 1px solid rgb(219, 216, 216);
+
+}
+
+
+
+.f3{
+  height: 10vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  text-align: justify;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+
+span.blue{
+  color:rgb(53, 151, 231) ;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  cursor: pointer;
+  
+}
+
+
+.f4{
+  height: 10vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+}
+
+hr.line{
+  display: none;
+}
+ .a1 p{
+  display: none;
+
+ }
+ .a1 br{
+  display:none;
+ }
+}
+
+@media (min-width:1025px) and (max-width:1576px){
+  footer {
+    width: 100%;
+    height: 100vh;
+    margin-top: 3vh; 
+  }
+  
+  main{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    background-color:#F5F5F7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+  }
+
+  
+.f1{
+  height: 40vh;
+  width:100% ;
+  font-size: 1rem;
+  text-align: justify;
+ 
+}
+
+.f2{
+   height: 30vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+} 
+.a1{
+  display: none;
+}
+
+.a2{
+  width: 100%;
+  display: block;
+}
+.a2 li{
+  display: block;
+ list-style: none;
+ color: rgb(83,83,85);
+ line-height: 23px;
+ font-size: 1rem;
+ border: 1px solid rgb(219, 216, 216);
+
+}
+
+
+
+.f3{
+  height: 10vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  text-align: justify;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+span.blue{
+  color:rgb(53, 151, 231) ;
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+  
+}
+
+
+.f4{
+  height: 10vh;
+  width:100% ;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+hr.line{
+  display: none;
+}
+ .a1 p{
+  display: none;
+
+ }
+ .a1 br{
+  display:none;
+ }
+}
